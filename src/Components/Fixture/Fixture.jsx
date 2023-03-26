@@ -2,9 +2,10 @@ import "./Fixture.css";
 import { useEffect, useReducer } from "react";
 import fixtureReducer from "../../Reducers/fixtureReducer";
 import FixturePrototype from "./FixtureProto";
+import createImagePath from "../../../public/assetsPath/createImagePath";
 import Ball from "../../assets/SVG/ball.svg";
 import { useStopwatch } from "react-timer-hook";
-import createImagePath from "../../../public/assetsPath/createImagePath";
+
 import storeResults from "../../Data/storeAllResults";
 
 const Fixture = ({ details }) => {
