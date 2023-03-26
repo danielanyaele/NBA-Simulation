@@ -26,7 +26,7 @@ const Fixture = ({ details }) => {
   useEffect(() => {
     setTimeout(() => {
       start();
-    }, 4000);
+    }, 5000);
   }, []);
 
   const score = () => {

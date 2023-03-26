@@ -16,7 +16,7 @@ const Header = () => {
   useEffect(() => {
     setTimeout(() => {
       start();
-    }, 4000);
+    }, 5000);
   }, []);
 
   //Handles Game Clock
