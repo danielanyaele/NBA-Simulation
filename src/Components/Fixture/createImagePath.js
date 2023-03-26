@@ -1,4 +1,4 @@
-import imagesPath from "../../assetsPath/images";
+import imagesPath from "../../AssetsPath/images";
 
 const createImagePath = (fixture) => {
   const teams = fixture.split(" - ");
