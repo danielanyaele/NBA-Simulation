@@ -53,7 +53,7 @@ const Header = () => {
         {/* <div className="header__timer">{breakType ? breakType : clock}</div> */}
         <div className="header__timer">{breakType ? breakType : time}</div>
 
-        <div className="header__title">Basketball</div>
+        <div className="header__title">NBA Virtual</div>
 
         <div className="header__game-status" >Live</div>
       </div>
