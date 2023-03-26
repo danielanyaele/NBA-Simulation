@@ -22,18 +22,10 @@ body {
 
 /*** MEDIA QUERIES ******/
 
-/* 600px */
-@media only screen and (max-width: 37.5rem) {
-  .container {
-    margin: 0 auto;
-  }
-}
-
-
 /* 400px */
 @media only screen and (max-width: 25rem) {
   html {
-    font-size: 55%;
+    font-size: 60%;
   }
 }
 

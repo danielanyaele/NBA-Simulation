@@ -33,5 +33,6 @@
 @media only screen and (max-width: 37.5rem) {
   .header {
     height: 7.5rem;
+    font-size: 1.7rem;
   }
 }
