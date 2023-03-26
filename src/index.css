@@ -25,7 +25,7 @@ body {
 /* 400px */
 @media only screen and (max-width: 25rem) {
   html {
-    font-size: 58%;
+    font-size: 50%;
   }
 }
 
