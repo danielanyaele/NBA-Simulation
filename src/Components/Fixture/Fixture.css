@@ -4,16 +4,6 @@
   font-weight: 700;
 }
 
-/* .fixture-1 {
-  background-color: #eff7ed;
-  color: #6eb68fff;
-} */
-
-.d {
-  width: 2rem;
-  height: 2rem;
-  fill: red;
-}
 
 .team__one {
   border-bottom: 1px solid #f7f7f7;
@@ -59,9 +49,7 @@
   margin-left: auto;
 }
 
-
-
-.ball{
+.ball {
   height: 2.2rem;
   width: 2.2rem;
   position: absolute;
@@ -70,7 +58,6 @@
   animation: moveRight 0.7s cubic-bezier(0.68, -0.14, 0.58, 0.79) forwards,
     rotate 1.25s linear;
 }
-
 
 .hidden {
   display: none;
@@ -101,5 +88,15 @@
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/* 600px */
+@media only screen and (max-width: 37.5rem) {
+  .team__one-logo {
+    height: 3.25rem;
+    width: 3.25rem;
+    border-radius: 50%;
+    margin-right: 1.15rem;
   }
 }

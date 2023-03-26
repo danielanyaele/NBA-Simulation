@@ -28,3 +28,10 @@
     transform: scale(0.95);
   }
 }
+
+/* 600px */
+@media only screen and (max-width: 37.5rem) {
+  .header {
+    height: 7.5rem;
+  }
+}
