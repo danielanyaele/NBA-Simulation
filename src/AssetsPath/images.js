@@ -29,7 +29,7 @@ import Raptors from "../assets/Images/tor.png";
 import Jazz from "../assets/Images/uta.png";
 import Wizards from "../assets/Images/was.png";
 
-const ImagesPaths = {
+const ImagePaths = {
   Hawks,
   Nets,
   Celtics,
@@ -62,4 +62,4 @@ const ImagesPaths = {
   Wizards,
 };
 
-export default ImagesPaths;
+export default ImagePaths;

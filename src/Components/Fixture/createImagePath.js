@@ -1,4 +1,4 @@
-import imagesPath from "../../assetsPath/images";
+import ImagePaths from "../../assetsPath/images";
 
 const createImagePath = (fixture) => {
   const teams = fixture.split(" - ");
@@ -11,8 +11,8 @@ const createImagePath = (fixture) => {
   const teamTwoNames = awayTeam.split(" ");
   const teamTwoSvgName = teamTwoNames[teamTwoNames.length - 1];
 
-  const teamOnePath = `${imagesPath[teamOneSvgName]}`;
-  const teamTwoPath = `${imagesPath[teamTwoSvgName]}`;
+  const teamOnePath = `${ImagePaths[teamOneSvgName]}`;
+  const teamTwoPath = `${ImagePaths[teamTwoSvgName]}`;
 
   return {
     homeTeam,
