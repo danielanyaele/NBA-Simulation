@@ -17,7 +17,7 @@ const fixtures = [
   {
     fixture: "Miami Heat - Boston Celtics",
     team1: [17, 5, 12, 10, 11, 20, 15, 14],
-    team2: [11, 7, 15, 19, 10, 13, 8, 19],
+    team2: [11, 13, 15, 19, 10, 13, 8, 19],
   },
   {
     fixture: "Houston Rockets - Portland Trail Blazers",
