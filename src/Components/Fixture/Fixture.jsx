@@ -53,7 +53,6 @@ const Fixture = ({ details }) => {
 
   //watches the time for points to be scored at
   useEffect(() => {
-
     //if game clock matches a scoring interval, score.
     if (state.scoringInterval && state.scoringInterval.includes(seconds)) {
       score();
@@ -73,13 +72,13 @@ const Fixture = ({ details }) => {
       }, 5000);
     }
 
-    //stop background clock from running after 50 secs
-    if (seconds === 48) {
+
+    //stop background clock from running after 49 secs (after game ends)
+    if (seconds === 49) {
       pause();
 
       //compiles results for all fixtures
       storeResults(state);
-
 
       //display halftime result
       setHTScore({
