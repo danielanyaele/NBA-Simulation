@@ -1,5 +1,5 @@
 import "./Fixture.css";
-import { useEffect, useReducer } from "react";
+import { useEffect, useReducer, useState } from "react";
 import fixtureReducer from "../../Reducers/fixtureReducer";
 import FixturePrototype from "./FixtureProto";
 import createImagePath from "../../imagePaths/createImagePath";
