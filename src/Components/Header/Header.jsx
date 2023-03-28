@@ -40,7 +40,7 @@ const Header = () => {
     }
 
     // display halftime score
-    if (time === 47) setDisplayHTSscore(true);
+    if (time === 48) setDisplayHTSscore(true);
 
     //stop game clock as clock reaches 48secs for fulltime.
     if (time === 48) {
