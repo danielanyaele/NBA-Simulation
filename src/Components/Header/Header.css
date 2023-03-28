@@ -10,23 +10,7 @@
   font-weight: 700;
 }
 
-.header__game-status {
-  animation: pulsate 1.5s linear infinite;
-}
 
-/*** ANIMATION ***/
-
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  0% {
-    transform: scale(0.95);
-  }
-}
 
 /* 600px */
 @media only screen and (max-width: 37.5rem) {
@@ -34,3 +18,79 @@
     height: 6rem;
   }
 }
+
+
+
+
+/* 550px */
+@media only screen and (max-width: 34.375rem) {
+
+  .header__title {
+    flex: 0 0 44%;
+  }
+}
+
+
+
+/* 500px */
+@media only screen and (max-width: 31.25rem) {
+
+  .header__title {
+    flex: 0 0 46%;
+  }
+}
+
+
+/* 460px */
+@media only screen and (max-width: 28.75rem) {
+
+  .header__title {
+    flex: 0 0 48%;
+  }
+}
+
+
+/* 420px */
+@media only screen and (max-width: 26.25rem) {
+
+  .header__title {
+    flex: 0 0 50%;
+  }
+}
+
+
+/* 400px */
+@media only screen and (max-width: 25rem) {
+
+  .header__title {
+    flex: 0 0 46%;
+  }
+}
+
+
+/* 360px */
+@media only screen and (max-width: 22.5rem) {
+
+  .header__title {
+    flex: 0 0 48%;
+  }
+}
+
+
+/* 340px */
+@media only screen and (max-width: 21.25rem) {
+
+  .header__title {
+    flex: 0 0 50%;
+  }
+}
+
+
+/* 330px */
+@media only screen and (max-width: 20.625rem) {
+
+  .header__title {
+    flex: 0 0 52%;
+  }
+}
+

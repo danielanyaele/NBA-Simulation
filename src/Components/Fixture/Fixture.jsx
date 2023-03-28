@@ -2,7 +2,7 @@ import "./Fixture.css";
 import { useEffect, useReducer } from "react";
 import fixtureReducer from "../../Reducers/fixtureReducer";
 import FixturePrototype from "./FixtureProto";
-import createImagePath from "../../assetsPath/createImagePath";
+import ImagePaths from "../../imagePaths/images";
 import Ball from "../../assets/SVG/ball.svg";
 import { useStopwatch } from "react-timer-hook";
 
@@ -10,6 +10,9 @@ import storeResults from "../../Data/storeAllResults";
 
 const Fixture = ({ details }) => {
   const [state, dispatch] = useReducer(fixtureReducer, FixturePrototype);
+   const [displayHTScore, setDisplayHTSscore] = useState(false);
+   const [HTScore, setHTScore] = useState({ HTScore1: 0, HTScore2: 0 });
+ 
   const { seconds, start, pause, reset } = useStopwatch({
     autoStart: false,
   });
@@ -50,7 +53,6 @@ const Fixture = ({ details }) => {
 
   //watches the time for points to be scored at
   useEffect(() => {
-    console.log(seconds);
 
     //if game clock matches a scoring interval, score.
     if (state.scoringInterval && state.scoringInterval.includes(seconds)) {
@@ -77,6 +79,14 @@ const Fixture = ({ details }) => {
 
       //compiles results for all fixtures
       storeResults(state);
+
+
+      //display halftime result
+      setHTScore({
+        HTScore1: state["gameDetails"]["HT-Score"]["team1"],
+        HTScore2: state["gameDetails"]["HT-Score"]["team2"],
+      });
+      setDisplayHTSscore(true);
     }
   }, [seconds]);
 
@@ -101,6 +111,9 @@ const Fixture = ({ details }) => {
             >
               +{state.team1PointsScored}
             </div>
+            {displayHTScore && (
+              <div className="halftime-score-1">{HTScore.HTScore1}</div>
+            )}
             <div className="team__one-scores__current">
               {state.team1CurPoints}
             </div>
@@ -126,6 +139,10 @@ const Fixture = ({ details }) => {
             >
               +{state.team2PointsScored}
             </div>
+            {displayHTScore && (
+              <div className="halftime-score-2">{HTScore.HTScore2}</div>
+            )}
+
             <div className="team__two-scores__current">
               {state.team2CurPoints}
             </div>
